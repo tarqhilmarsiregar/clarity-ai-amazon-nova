@@ -1,0 +1,30 @@
+# --- Frontend (Next.js / React) ---
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/build/
+frontend/.env
+frontend/.env.local
+frontend/.env.production
+frontend/.env.development.local
+
+# --- Backend (Python / AWS Lambda) ---
+backend/__pycache__/
+backend/*.py[cod]
+backend/*$py.class
+backend/.env
+backend/venv/
+backend/env/
+backend/.venv/
+backend/.aws/
+backend/.chalice/
+backend/.serverless/
+backend/node_modules/
+
+# --- OS & IDE Files ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.bak

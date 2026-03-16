@@ -1,0 +1,35 @@
+service: clarity-backend
+provider:
+  name: aws
+  runtime: python3.11
+  region: us-east-1
+  iam:
+    role:
+      statements:
+        - Effect: Allow
+          Action:
+            - bedrock:InvokeModel
+            - bedrock:InvokeModelWithResponseStream
+            - bedrock:Converse # Tambahkan ini secara spesifik
+          Resource: 
+            - "arn:aws:bedrock:us-east-1::foundation-model/amazon.nova-pro-v1:0"
+            - "arn:aws:bedrock:us-east-1::foundation-model/amazon.nova-lite-v1:0"
+        - Effect: Allow
+          Action:
+            - dynamodb:PutItem
+            - dynamodb:GetItem
+          Resource: "*"  
+  environment:
+    AUDITS_TABLE: clarity-audits
+functions:
+  analyzeImage:
+    handler: handler.analyze_image
+    events:
+      - http:
+          path: audit/image
+          method: post
+          cors: true
+custom:
+  pythonRequirements:
+    dockerizePip: false
+    useUv: true
