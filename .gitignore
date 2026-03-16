@@ -5,8 +5,6 @@ clarity-frontend/out/
 clarity-frontend/build/
 clarity-frontend/.env
 clarity-frontend/.env.local
-clarity-frontend/.env.production
-clarity-frontend/.env.development.local
 
 # --- Backend (Python / AWS Lambda) ---
 clarity-backend/__pycache__/
@@ -28,3 +26,4 @@ Thumbs.db
 .idea/
 *.swp
 *.bak
+.kiro
