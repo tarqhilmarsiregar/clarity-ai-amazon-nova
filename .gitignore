@@ -26,4 +26,4 @@ Thumbs.db
 .idea/
 *.swp
 *.bak
-.kiro
+.kiro/specs/code-remediation-parsing-fix
