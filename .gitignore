@@ -1,25 +1,25 @@
 # --- Frontend (Next.js / React) ---
-frontend/node_modules/
-frontend/.next/
-frontend/out/
-frontend/build/
-frontend/.env
-frontend/.env.local
-frontend/.env.production
-frontend/.env.development.local
+clarity-frontend/node_modules/
+clarity-frontend/.next/
+clarity-frontend/out/
+clarity-frontend/build/
+clarity-frontend/.env
+clarity-frontend/.env.local
+clarity-frontend/.env.production
+clarity-frontend/.env.development.local
 
 # --- Backend (Python / AWS Lambda) ---
-backend/__pycache__/
-backend/*.py[cod]
-backend/*$py.class
-backend/.env
-backend/venv/
-backend/env/
-backend/.venv/
-backend/.aws/
-backend/.chalice/
-backend/.serverless/
-backend/node_modules/
+clarity-backend/__pycache__/
+clarity-backend/*.py[cod]
+clarity-backend/*$py.class
+clarity-backend/.env
+clarity-backend/venv/
+clarity-backend/env/
+clarity-backend/.venv/
+clarity-backend/.aws/
+clarity-backend/.chalice/
+clarity-backend/.serverless/
+clarity-backend/node_modules/
 
 # --- OS & IDE Files ---
 .DS_Store
