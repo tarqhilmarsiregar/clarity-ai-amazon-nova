@@ -27,3 +27,10 @@ Thumbs.db
 *.swp
 *.bak
 .kiro/
+
+# --- Backend Optimization ---
+clarity-backend/venv/
+clarity-backend/node_modules/
+clarity-backend/.serverless/
+clarity-backend/handler-failed.py
+clarity-backend/__pycache__/
